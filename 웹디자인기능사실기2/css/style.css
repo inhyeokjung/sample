@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+#wrap{
+    position: relative;
+    background-color: #fff;
+}
+
+/*************** 내비게이션 ****************/
+
+#top_section{
+    margin: 0 auto; 
+    position: relative;
+    width: 1200px;
+    height: 100px;
+}
+#top_section>#logo{
+    line-height: 125px;
+}
+#nav{
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+
+#nav>ul>li a{
+    text-decoration: none;
+}
+
+#nav>ul{
+    z-index: 4;
+}
+
+#nav>ul>li>a{
+    width: 150px;
+    height: 40px;
+    display: block;
+}
+
+#nav>ul>li{
+    background-color: #3cb149;
+    float: left;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    list-style: none;
+}
+
+#nav_bg{
+    top: 100px;
+    position: absolute;
+    z-index: 2;
+    width: 1200px;
+    height: 180px;
+    background-color: #3cb149;
+    display: none;
+}
+
+#nav>ul>li>a{
+    display: block;
+    text-decoration: none;
+}
+
+#nav>ul>li>a{
+    border-right: none;
+}
+
+#nav>ul>li>ul{
+    display: none;
+}
+
+#nav>ul>li>ul>li{
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#nav>ul>li:hover{
+    background-color: #1d8844;
+}
+
+#nav>ul>li>ul>li:hover{
+    background-color: #1d8844;
+}
+/*************** 슬라이더  *************/
+#bx_slider{
+    margin: 0 auto; 
+    position: relative;
+    width: 1200px;
+    height: 300px;
+}
+
+#slider{
+    position: absolute;
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+}
+#slider img{
+    position: absolute;
+}
+#slider img:not(:first-child){
+    margin-left: 1200px;
+}
+
+
+/*****************  공지사항 **********************/
+
+#contents{
+    margin: 0 auto; 
+    padding-top: 10px;
+    position: relative;
+    width: 1200px;
+    height: 200px;
+}
+
+#contents div{
+    float: left;
+}
+
+/*  공지사항 좌측 */
+
+#contents>#L_contents{
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+
+#L_contents>#notice{
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+
+#L_contents>#notice>ul{
+    padding-top: 20px;
+}
+
+#L_contents>#notice>ul#first{
+    width: 300px;
+    height: 150px;
+    float: left;
+}
+
+#L_contents>#notice>ul>li{
+    padding-top: 13px;
+    width: 300px;
+    list-style: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 17px;
+}
+
+#L_contents>#notice>ul>li>a{
+    text-decoration: none;
+/*    color: #000;*/
+}
+#L_contents>#notice>ul#second{
+    width: 100px;
+    height: 150px;
+    float: right;
+}
+
+/* 팝업 부분 */
+
+#popup{
+    z-index: 99;
+    background-color: #fff;
+    position: absolute;
+    left: 40%;
+    top: 25%;
+    width: 400px;
+    height: 400px;
+    border: 1px solid #000;
+    display: none;
+}
+#popup h2{
+    width: 395px;
+    padding: 5px;
+    border-bottom: 1px solid #000;
+}
+#popup p{
+    text-align: center;
+    padding-top: 30px;
+}
+button#close{
+    right: 5px;
+    bottom: 5px;
+    position: absolute;
+    cursor: pointer;
+    border: 1px solid #000;
+/*    background-color: rgba(0,0,0,0.3);*/
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+/*  공지사항 중간 */
+#C_contents{
+    position: relative;
+    width: 400px;
+    height: 200px;
+/*    border: 1px solid #000;*/
+}
+#C_contents>#imgs{
+    padding-top: 10px;
+    margin: 0 auto;
+}
+#C_contents>#imgs>a>img{
+    float: left;
+    padding-left: 9px;
+}
+
+/*  공지사항 우측 */
+
+#R_contents{
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+
+#R_contents>ul{
+    width: 400px;
+    height: 70px;
+    position: relative;
+}
+#R_contents>ul>li img{
+    width: 60%;
+}
+#R_contents>ul>li{
+    list-style: none;
+    float: left;
+}
+#R_contents>ul>li:first-child{
+    width: 100px;
+}
+#R_contents>ul>li:last-child{
+    width: 300px;
+}
+
+
+/*************** 푸터부분 ***************/
+
+#footer{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 1200px;
+    height: 100px;
+/*    border: 1px solid #000;*/
+}
+
+#footer div{
+    float: left;
+}
+
+#footer>#b_logo{
+    position: relative;
+    width: 300px;
+    height: 100px;
+    line-height: 125px;
+}
+
+#footer>#copy{
+    position: relative;
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    font-size: 10px;
+}
+#footer>#copy>p{
+    line-height: 22px;
+}
+#footer>#f_site{
+    position: relative;
+    width: 300px;
+    height: 100px;
+}
+
+#footer>#f_site>a{
+    text-align: center;
+    display: block;
+    width: 300px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
